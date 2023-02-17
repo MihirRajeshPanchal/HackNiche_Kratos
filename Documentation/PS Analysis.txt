@@ -1,0 +1,29 @@
+PS 6 - Intrusion / Theft Detection system
+
+An intrusion/theft detection system using IoT and AI
+involves the use of various sensors and devices to
+detect and alert for possible unauthorized entry or
+theft in a given area or property. Using IoT and AI can
+provide a high level of security and peace of mind for
+property owners and managers, by leveraging the
+power of advanced technology to detect and prevent
+threats before they become serious.
+
+Features :
+1.  The system should be able to raise an alarm/alert in case
+of an intrusion.
+2.  The system should be able to gather data from various
+sensors/devices such as cameras, motion sensors, etc.
+3.  Use ML-based detection to reduce the number of false
+positive alarms/thefts.
+4.  Make use of a dashboard for real-time monitoring of their
+premises
+5.  Implement a way to alert authorities in time.
+
+
+Products
+1.  React Web application with dashboard connected to firebase (direbase data retrieval)
+2.  IOT Sensors connected raspberry pi which is connected to firebase (firebase data entry)
+    -   Raspberry pi will also have ml code when trigger it fired
+3.  Drone with its programming 
+*4. Flutter app conneccted to firebase 
