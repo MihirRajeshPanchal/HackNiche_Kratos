@@ -1,0 +1,12 @@
+13:56:01 **** Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75716	   1244	   7760	  84720	  14af0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+
+13:56:08 Build Finished (took 6s.782ms)
+

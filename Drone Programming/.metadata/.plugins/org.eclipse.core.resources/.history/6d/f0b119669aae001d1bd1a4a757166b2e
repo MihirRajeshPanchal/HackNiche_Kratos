@@ -1,12 +1,18 @@
 // Do not remove the include below
 #include "PlutoPilot.h"
-
+#include "Peripheral.h"
+#include "Utils.h"
+#include "Math.h"
+#include "User.h"
+#include "Sensor.h"
+#include "Control.h"
+#include "Estimate.h"
 
 //The setup function is called once at PlutoX's hardware startup
 void plutoInit()
 {
 //Add your hardware initialization code here
-
+setUserLoopFrequency(50);
 }
 
 
@@ -16,7 +22,7 @@ void plutoInit()
 void onLoopStart()
 {
 //Do your one time stuff here
-
+GPIO.init(Pin8, INPUT);
 }
 
 
@@ -26,7 +32,17 @@ void plutoLoop()
 {
 //Add your repeated code here
 
+if(GPIO.read(Pin8) == 0){
 
+//	Command.arm();
+	LED.set(RED, ON);
+	LED.set(GREEN, OFF);
+	LED.set(BLUE, OFF);
+}
+else{
+//	Command.arm();
+	LED.set(GREEN, ON);
+}
 
 }
 
