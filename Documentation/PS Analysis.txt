@@ -22,7 +22,7 @@ premises
 
 
 Products
-1.  React Web application with dashboard connected to firebase (direbase data retrieval)
+1.  React Web application with dashboard connected to firebase (firebase data retrieval)
 2.  IOT Sensors connected raspberry pi which is connected to firebase (firebase data entry)
     -   Raspberry pi will also have ml code when trigger it fired
 3.  Drone with its programming 
