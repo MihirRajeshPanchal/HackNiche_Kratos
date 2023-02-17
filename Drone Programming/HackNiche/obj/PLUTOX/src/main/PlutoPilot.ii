@@ -5233,9 +5233,9 @@ void plutoInit()
 void onLoopStart()
 {
 
-LED.flightStatus(DEACTIVATE);
-GPIO.init(Pin8, INPUT);
-Monitor.println("onLoopStart ");
+ GPIO.init(Pin8, INPUT);
+ LED.flightStatus(DEACTIVATE);
+ Monitor.println("onLoopStart ");
 }
 
 
@@ -5246,17 +5246,19 @@ void plutoLoop()
  Monitor.println(" ",GPIO.read(Pin8));
 
 
- if(GPIO.read(Pin8) == 0){
+ if(GPIO.read(Pin8) == 1){
 
 
-  LED.set(RED, ON);
-  LED.set(GREEN, OFF);
+  LED.set(RED, OFF);
+  LED.set(GREEN, ON);
 
  }
  else{
 
-  LED.set(RED, OFF);
-  LED.set(GREEN, ON);
+
+
+  LED.set(RED, ON);
+  LED.set(GREEN, OFF);
 
  }
 

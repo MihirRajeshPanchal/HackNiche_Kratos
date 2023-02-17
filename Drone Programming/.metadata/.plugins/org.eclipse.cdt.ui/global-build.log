@@ -167,3 +167,88 @@ arm-none-eabi-size ./obj/Experience_PLUTOX.elf
    text	   data	    bss	    dec	    hex	filename
   75716	   1244	   7760	  84720	  14af0	./obj/Experience_PLUTOX.elf
 arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+15:05:25 **** Incremental Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75716	   1244	   7760	  84720	  14af0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+15:05:52 **** Incremental Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+make: Nothing to be done for 'all'.
+15:06:07 **** Incremental Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+make: Nothing to be done for 'all'.
+15:06:24 **** Incremental Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+make: Nothing to be done for 'all'.
+15:08:42 **** Clean-only build of configuration Release for project HackNiche ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+15:08:42 **** Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75716	   1244	   7760	  84720	  14af0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+15:14:52 **** Clean-only build of configuration Release for project HackNiche ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+15:14:52 **** Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75692	   1244	   7760	  84696	  14ad8	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+15:20:36 **** Clean-only build of configuration Release for project HackNiche ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+15:20:37 **** Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75716	   1244	   7760	  84720	  14af0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
+15:23:11 **** Clean-only build of configuration Release for project HackNiche ****
+make -f Makefile clean 
+./obj/PLUTOX/src/main/PlutoPilot.o
+rm -f ./obj/Experience_PLUTOX.bin ./obj/Experience_PLUTOX.hex ./obj/Experience_PLUTOX.elf ./obj/PLUTOX/src/main/PlutoPilot.o ./obj/Experience_PLUTOX.map
+rm -rf ./obj/PLUTOX
+cd src/test && /usr/bin/make clean || true
+/bin/sh: line 0: cd: src/test: No such file or directory
+15:23:13 **** Build of configuration Release for project HackNiche ****
+make -f Makefile all 
+./obj/PLUTOX/src/main/PlutoPilot.o
+%% PlutoPilot.cpp
+arm-none-eabi-g++ -o obj/Experience_PLUTOX.elf obj/PLUTOX/src/main/PlutoPilot.o -lm -nostartfiles --specs=nosys.specs -lc -lnosys -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -Wdouble-promotion -flto -fuse-linker-plugin -Os -ggdb3 -DDEBUG -static -L./libs -lpluto_0.3 -Wl,-gc-sections,-Map,./obj/Experience_PLUTOX.map -Wl,-L./ld -T./ld/stm32_flash_f303_256k.ld
+arm-none-eabi-size ./obj/Experience_PLUTOX.elf 
+   text	   data	    bss	    dec	    hex	filename
+  75716	   1244	   7760	  84720	  14af0	./obj/Experience_PLUTOX.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/Experience_PLUTOX.elf obj/Experience_PLUTOX.hex
